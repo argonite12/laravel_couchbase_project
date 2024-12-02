@@ -1,0 +1,32 @@
+{
+    "name": "yondu/couchbase",
+    "description": "Couchbase eloquent and model for Laravel",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Yondu\\Couchbase\\": "src/Yondu/"
+        }
+    },
+	"autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+	"minimum-stability": "dev",
+    "require": {
+		"php": "^8.0",
+        "illuminate/support": "^10.0|^11.0",
+        "illuminate/container": "^10.0|^11.0",
+        "illuminate/database": "^10.0|^11.0",
+        "illuminate/events": "^10.0|^11.0",
+        "ext-couchbase": ">=4.0"
+	},
+	"extra": {
+        "laravel": {
+            "providers": [
+                "Yondu\\Couchbase\\CouchbaseServiceProvider"
+            ]
+        }
+    }
+}
